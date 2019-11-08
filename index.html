@@ -26,18 +26,20 @@
     </script>
 </head>
 
-<body>
+<body class="body">
 <div id="dialog"></div>
-<table cellspacing="0" cellpadding="0" style="padding-top:8px;">
+<table cellspacing="0" cellpadding="0" style="padding-top:8px;border: red 0px solid;">
     <tr>
         <td valign="top">
-            <div id="fooplot-frame" class="ui-widget-content" style="width:650px;height:400px;padding:15px;">
+            <div id="fooplot-frame" class="ui-widget-content drawnFn" >
                 <div id="theplot" style="width:100%;height:100%;background:#ffffff;overflow:hidden;"></div>
             </div>
 
+        </td>
+        <td valign="top" >
             <div id="dialog-permalink" style="display:none;"></div>
 
-            <div class="ui-widget-content" style="background:#F4F4F4;width:650px;padding:15px;margin-top:15px;">
+            <div class="ui-widget-content" style="background:#F4F4F4;width:650px;padding:15px;margin-top:0px;">
                 <div align="center">
                     <ul id="plots" class="sortable" style="list-style-type:none;padding:0px;margin:0px;">
                     </ul>
