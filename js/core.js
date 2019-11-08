@@ -256,7 +256,7 @@ function Fooplot(container,options) {
       _self.zoom(2);
     },
     null,
-    'Zoom In'
+    'Zoom +'
   );
 
   this.toolZoomOut=this.addToolButton(
@@ -266,26 +266,27 @@ function Fooplot(container,options) {
       _self.zoom(0.5);
     },
     null,
-    'Zoom Out'
+    'Zoom -'
   );
 
   this.addToolSeparator();
 
   this.toolMove=this.addToolButton(
     'url(\'data:image/gif;base64,R0lGODlhIAAgAPY/AP9/AP+AAP+AAf+AAv+BBP+CBf+FDP+GDv+HD/+IEf+IEv+JE/+KFv+MGv+NG/+OHf+PH/+PIP+QIf+QIv+TKP+UKf+bOP+dPP+fQP+jSP+oUv+pVP+rWP+uXf+xY/+1a/+3cP+6dv+7d/+7eP+8ef+9e/++ff/Dh//DiP/Hj//Ikv/Klf/Ll//LmP/NnP/Pn//du//fv//hw//ixv/kyv/lzP/mzv/o0f/o0v/p1P/t2//u3v/v4P/w4f/+/v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAEAALAAAAAAgACAAAAf0gEBAAAEAhoeIiYqHhYJAhYuRkoyDk4mQloaYlhw5D5mEoAAjPz87E6KWBC6lpaepkQgwra09qLCJDhYWIKUiGhsXuJEZpRbDk8U/x8jExs0TwonKzIgUm4sRPBuK1IogLJMPOz8a3c+JvSiRDjq+u/C8pR7xuymlJIoBOLT9/v+lPijqALDgPxmLTPjKwLAhqR8gGjZsUYoGgkisMJxb9u2HjQWRAhCAoXEaOkQgcICchCDCxmqHMjBo5q3Zopo2TXLMaSgDCHClWIwYUSEngxv+VGAbpsAGrXU8DSGYgU/U0kUIYoCIqg/WI66UBIXi2QhIIAA7\')',
-    null,FOOPLOT_MODE_MOVE,'Move');
+    null,FOOPLOT_MODE_MOVE,'Mover');
 
   this.toolZoomBox=this.addToolButton(
     'url(\'data:image/gif;base64,R0lGODlhIAAgAPYAAP9/AP+AAP+AAf+AAv+BA/+BBP+CBf+DB/+GDf+GDv+HD/+KFv+LGP+MGv+OHf+PH/+QIv+TJ/+UKf+UKv+YMv+bN/+gQf+iRf+jSP+kSf+nT/+nUP+oUv+pU/+pVP+qVv+sWf+uXv+wYf+xY/+1a/+2bv+3b/+5c/+8ev+9fP+/gP/Bg//Chv/Eiv/Gjf/Hj//HkP/Jk//JlP/Ll//Mmf/Onv/Qof/Xr//Ysv/bt//cuv/evf/evv/gwf/gwv/hw//jx//kyv/mzf/r1//v4P/w4f/w4v/x4//06v/27f/48f/59P/69v/79//7+P/8+v/9+//9/P/+/f/+/v///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAFUALAAAAAAgACAAAAf+gFVVAAEAhoeIiYqHhYJVhYuRkoyDk5aTkJeajJoHDZuaFzFAS1RJOiwSoIoKNVSvsK9LJ5mgFUSxua8/C6sKR09LT03CS07Gx1Q4qzZUGoaQAdKHL1Qimxmvz4qZ1Uq9lzTahgfl5geG1VQfmkLjADe5JumvL5cHT+/xsfMA6j+XIMDatg9WP3VELgUo5cxQwVcHX+nQ5OPdjCEYMYagR2WFJnXbJIHUROGdSCpEFGxKQYVEhJcwY0ZoZgHUAXe6cnJY5WBHTl1Pdq4ywTAXERQMg64C8GDEjCBIdrT4oDKDk1dP2C2VZBWr0K2Lur5SBXYRhqsqykrCkELtqloObhU9ipsogCO60AAICgQAOw==\')',
-    null,FOOPLOT_MODE_ZOOMBOX,'Zoom Box');
+    null,FOOPLOT_MODE_ZOOMBOX,'Zoom Seccion');
 
   this.toolTrace=this.addToolButton(
     'url(\'data:image/gif;base64,R0lGODlhIAAgAMYAAP9/AP+AAP+AAf+AAv+BBP+CBf+FDP+GDv+HD/+IEf+IEv+JE/+KFv+MGv+NG/+OHf+PH/+PIP+QIf+QIv+TKP+UKf+bOP+dPP+fQP+jSP+oUv+pVP+rWP+uXf+xY/+1a/+3cP+6dv+7d/+7eP+8ef+9e/++ff/Dh//DiP/Hj//Ikv/Klf/Ll//LmP/NnP/Pn//du//fv//hw//ixv/kyv/lzP/mzv/o0f/o0v/p1P/t2//u3v/v4P/w4f/+/v////9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/ACH5BAEAAD4ALAAAAAAgACAAAAdfgD4+AAEAhoeIiYqHhYI+hYuRkoyDk5aTkJeajJudnp+goaKjpKWmp6iJP6urqD+qr6SxirOgtbSsnre4rZu7vL+jrL2ph8GmxMUAw8rNzs/Q0YqZ0qePxQGOhKaNPoEAOw==\')',
-    null,FOOPLOT_MODE_TRACE,'Trace');
+    null,FOOPLOT_MODE_TRACE,'Rastro');
 
   this.toolIntersection=this.addToolButton(
     'url(\'data:image/gif;base64,R0lGODlhIAAgAMYAAP9/AP+AAP+AAf+AAv+BBP+CBf+FDP+GDv+HD/+IEf+IEv+JE/+KFv+MGv+NG/+OHf+PH/+PIP+QIf+QIv+TKP+UKf+bOP+dPP+fQP+jSP+oUv+pVP+rWP+uXf+xY/+1a/+3cP+6dv+7d/+7eP+8ef+9e/++ff/Dh//DiP/Hj//Ikv/Klf/Ll//LmP/NnP/Pn//du//fv//hw//ixv/kyv/lzP/mzv/o0f/o0v/p1P/t2//u3v/v4P/w4f/+/v////9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/AP9/ACH5BAEAAD4ALAAAAAAgACAAAAdygD4+AAEAhoeIiYqHhYI+hYuRkoyDk5aTkJeajJuRP52gn6CaP6Kjlqank6mqi6ytiq+opaWeo6yyspK5ibq7trS+tp7BsLHFxojBwqe0yb2HzJ24z7ywvrXNl9mb0tHe3rfP44uZ5OeLj+gBjoTPjT6BADs=\')',
-    null,FOOPLOT_MODE_INTERSECTION,'Find Intersections and Roots');
+    null,FOOPLOT_MODE_INTERSECTION,'\n' +
+      'Encuentra intersecciones y raíces');
 
 
   this.zoomboxBox=document.createElement('div');
